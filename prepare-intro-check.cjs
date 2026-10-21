@@ -1,0 +1,1 @@
+const fs=require('fs');let script=fs.readFileSync('browser-qa.cjs','utf8');script=script.replace('scrollTo(0,0)',"document.documentElement.style.scrollBehavior='auto';document.querySelector('.church-intro').scrollIntoView()").replaceAll('qa-${name}.png','intro-${name}.png');fs.writeFileSync('intro-qa.cjs',script);

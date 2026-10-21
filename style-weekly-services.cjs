@@ -1,0 +1,3 @@
+const fs=require('fs');const root='motowoh-church/dist/';let app=fs.readFileSync(root+'app.js','utf8');const original='const services=`<section class="section services"';if(!app.includes(original))throw Error('Weekly services not found');app=app.replace(original,'const services=`<section class="section services weekly-services"');fs.writeFileSync(root+'app.js',app);
+let html=fs.readFileSync(root+'index.html','utf8').replace('</head>','    <link rel="stylesheet" href="weekly-services.css">\n</head>');fs.writeFileSync(root+'index.html',html);
+let sw=fs.readFileSync(root+'sw.js','utf8').replace('motowoh-offline-v14','motowoh-offline-v15').replace('const FILES=[',"const FILES=['weekly-services.css',");fs.writeFileSync(root+'sw.js',sw);

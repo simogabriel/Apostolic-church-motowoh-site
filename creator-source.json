@@ -1,0 +1,367 @@
+{
+  "service": {
+    "bytedEnv": {},
+    "config": {
+      "psm": "tiktok.web.embed"
+    },
+    "prefix": "http",
+    "env": "",
+    "vGeo": {
+      "isEU": false,
+      "isUS": false,
+      "isROW": true
+    },
+    "isReady": true
+  },
+  "theme": {
+    "siteName": "tiktok-embed",
+    "siteBaseUrl": "https://www.tiktok.com/embed",
+    "favIconHref": "https://www.tiktok.com/favicon.ico",
+    "isI18nSupported": true,
+    "lang": "en",
+    "langs": [
+      "en",
+      "ar",
+      "de-de",
+      "es-es",
+      "fi-fi",
+      "fr-fr",
+      "fr-ca",
+      "id-id",
+      "ja-jp",
+      "ko-kr",
+      "ms-my",
+      "ru-ru",
+      "th-th",
+      "tr-tr",
+      "vi-vn",
+      "zh-tw",
+      "he-il",
+      "jv-id",
+      "ceb-ph",
+      "cs-cz",
+      "it-it",
+      "hu-hu",
+      "nl-nl",
+      "pl-pl",
+      "pt-br",
+      "ro-ro",
+      "sv-se",
+      "el-gr",
+      "uk-ua",
+      "ur-pk",
+      "hi-in",
+      "my-mm",
+      "km-kh",
+      "bn-bd",
+      "tl-ph"
+    ],
+    "defaultLang": "en",
+    "isPhoenix": false,
+    "globalQueryParams": {
+      "referer_url": "",
+      "refer": "creator_embed"
+    },
+    "sourceComponents": {
+      "vidab": "null",
+      "partnerSource": "null"
+    },
+    "shareComponentConfig": {
+      "bizName": "Embed",
+      "pageName": "Common"
+    },
+    "proxyApi": "consul://tiktok.web.proxy",
+    "tracking": {
+      "slardarWeb": {
+        "bid": "tiktok_web_embed",
+        "sdkUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js",
+        "domain": "mon.tiktokv.com",
+        "pluginPathPrefixObj": {
+          "pluginPathPrefix": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins"
+        },
+        "slardarScriptUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok-infra/csp/sdk-pre/slardar.web.pre.js"
+      },
+      "tea": {
+        "site_name": "",
+        "app_id": 1284,
+        "commonParams": {
+          "page_type": true
+        },
+        "enable_ab_test": true,
+        "idc": "sg",
+        "_RUNTIME_IDC_ENV": "my",
+        "_REGION_ENV": "sg"
+      }
+    },
+    "embedApi": "consul://tiktok.embed.api",
+    "mssdk": {
+      "load": true,
+      "appId": 1284,
+      "region": "sg-tiktok",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.223/webmssdk.js",
+      "mode": 516,
+      "pathList": [
+        "/api/recommend"
+      ]
+    },
+    "shareApi": "consul://tiktok.share.api",
+    "isMobileView": false
+  },
+  "ttep": {
+    "TCE_HOST_ENV": "online",
+    "APP_ZONE": "my",
+    "TCE_ENV": "prod"
+  },
+  "router": {
+    "link": "/embed/@tacc.motowoh.medi",
+    "state": {},
+    "autoFetch": true
+  },
+  "user": {
+    "shouldGetLoginInfo": false,
+    "shouldGetIpInfo": true,
+    "region": "CM",
+    "isReady": true,
+    "ttwid": "7699029534154343944",
+    "proxyApi": "consul://tiktok.web.proxy"
+  },
+  "source": {
+    "url": "",
+    "data": {
+      "/embed/@tacc.motowoh.medi": {
+        "isFetching": false,
+        "isReady": true,
+        "route": "/embed/@tacc.motowoh.medi/",
+        "link": "/embed/@tacc.motowoh.medi",
+        "query": {},
+        "page": 1,
+        "userInfo": {
+          "id": "7614422335383454736",
+          "avatarThumbUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/210130877bdd3206df177aa27b466af6~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=f9371716&x-expires=1792742400&x-signature=tC7dMhaIlvpMlb3HCZWCs%2FOlUVg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my",
+          "uniqueId": "tacc.motowoh.medi",
+          "verified": false,
+          "followingCount": 2,
+          "followerCount": 50,
+          "heartCount": 227,
+          "signature": "",
+          "privateAccount": false,
+          "nickname": "Tacc Motowoh Media",
+          "code": 200,
+          "customErrorCode": 0
+        },
+        "videoList": [
+          {
+            "id": "7697941525740768529",
+            "desc": "Powerful ministration from the youth Choir 🔥❤️#taccameroon #taccmotowoh #fyp #viral #worship @Med life With Albright 🩺❤️ ",
+            "height": 1024,
+            "width": 576,
+            "ratio": "540p",
+            "coverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/ogPreAGqkKWDhLjXVQKvhWoIAg3pCSfge7oRIb~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=cDQse%2BmGdmd4fDTclNvr2Gh1uJA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "originCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oY1QqaUEbAyIkAiI6A2IERCCMaClwzf3qYlBip~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=45LQL1SYt0LTRXxr%2FVRxLB8xGHs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "dynamicCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oA2DhiGPLUKvqKpDejekACbIQoXggoMeAVRSZI~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=x4AKcZ4t%2BTJ3AE7BihC8DPBzD%2F0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "playAddr": "https://v16m.tiktokcdn.com/7cb1a7ea33d13d4dff47075e03fe2e17/6adb17a3/video/tos/alisg/tos-alisg-pve-0037c001/o8pI6aizlvECEUqmCEYblCwIBfADiAQy2AI1kE/?a=1233&bti=ODszNWYuMDE6&&bt=733&ft=-_sz_mmJPD12NM54Bn-UxdMFbY6e3wv25ucAp&mime_type=video_mp4&rc=ZjQ3OWloNWU5NTtnOWhlNUBpamxxNHQ5cmc7ZTMzODczNEBfLWBiNi4wNV4xNDVjNl81YSNoYTEvMmRzbF5hLS1kMTFzcw%3D%3D&vvpl=1&l=20261021160645ABF5B2828CAD3A65DFE4&btag=e000a0000&sp_exp=hash_v0",
+            "playCount": 568,
+            "privateItem": false,
+            "authorUniqueId": "tacc.motowoh.medi"
+          },
+          {
+            "id": "7697497930042772757",
+            "desc": "🔥🔥 #taccameroon #taccmotowoh #fyp #viral #sundayservice @Med life With Albright 🩺❤️ ",
+            "height": 1024,
+            "width": 576,
+            "ratio": "540p",
+            "coverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o45HEf1FDBmqFvsEwmEAwoQz0BUQGSGg2eRxBA~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=YqlOp4LnTHKPkleyWvU%2Fp2bzMOI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "originCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o0DpbDcAYMEB2BAOjtAaOIi7VaiaTCtZIABBP~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=dO13lvcU5xPpy%2BWeHHXFAsSnG0Q%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "dynamicCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIWcIa2BYPCTCitA0IATMBpAazEr7aABdiVDD~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=gWQOXy9Xpzvq%2BoygdDUWbH%2Fx2%2B0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "playAddr": "https://v16m.tiktokcdn.com/d6edb6e11003adb3f046bd3bdad9335d/6adb15a7/video/tos/alisg/tos-alisg-pve-0037c001/o8v0UQwIDsLBwBA1gEfaAjSlGFGFfqBEL2SRZT/?a=1233&bti=ODszNWYuMDE6&&bt=268&ft=-_sz_mmJPD12NM54Bn-UxdMFbY6e3wv25ucAp&mime_type=video_mp4&rc=Zzs5OGVlNjY2ZmVpNjdnM0BpanRyanU5cnZqZTMzODczNEBhMDM1My1iXjUxXmAxYy8uYSNoM2ouMmQ0LTZhLS1kMTFzcw%3D%3D&vvpl=1&l=20261021160645ABF5B2828CAD3A65DFE4&btag=e000b8000&sp_exp=hash_v0",
+            "playCount": 213,
+            "privateItem": false,
+            "authorUniqueId": "tacc.motowoh.medi"
+          },
+          {
+            "id": "7695766012792294676",
+            "desc": "Moments of Worship Sunday 11th October 2026 🔥🔥🔥🙏🏾#taccameroon #taccmotowoh #sundayseevice #fyp #viral @Med life With Albright 🩺❤️ @Apostolic Satellites. ",
+            "height": 1024,
+            "width": 576,
+            "ratio": "540p",
+            "coverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/owfaBlfDcIoKRzqE9tjcuzTNZBNAEEnPFBsUQg~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=e7%2BSnY26cwUVyprVcmywH%2BcqblA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "originCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oQIMIBBzR2SzAvDqeFHZfpitunoEUEPgc5NnBR~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=TGFNppT%2FOXSbYjwUMhLonm10g9k%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "dynamicCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o0xgtp2UAenENocqRQuBB5SjnEIMIBFMS78zfD~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=wYc7Mv9L%2BkQFNxmPSKWLF1m39Lc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "playAddr": "https://v16m.tiktokcdn.com/f4b72d594c63f0a16f3a95ae5bfe10f2/6adb1627/video/tos/alisg/tos-alisg-pve-0037c001/osltBSfDcIoyR5qEe2kuXzpNMBoAjEnMFQIUEg/?a=1233&bti=ODszNWYuMDE6&&bt=459&ft=-_sz_mmJPD12NM54Bn-UxdMFbY6e3wv25ucAp&mime_type=video_mp4&rc=aTM8Zmc1aWQ7N2U7ZDk1O0BpMzxlZW45cm9nZTMzODczNEA1LTMxXl8tXi0xMTYxYy42YSNrZ15jMmQ0ZzNhLS1kMWBzcw%3D%3D&vvpl=1&l=20261021160645ABF5B2828CAD3A65DFE4&btag=e00090000&sp_exp=hash_v0",
+            "playCount": 402,
+            "privateItem": false,
+            "authorUniqueId": "tacc.motowoh.medi"
+          },
+          {
+            "id": "7695105319822806273",
+            "desc": "See you all in church tomorrow 🥰❤️#taccameroon #sundayseevice #taccmotowoh #viral #fyp @Med life With Albright 🩺❤️ ",
+            "height": 1024,
+            "width": 576,
+            "ratio": "540p",
+            "coverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o81foFE2AZHRLDuQQugBt8Q9fNEEyqocgFBKQQ~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=4%2FCQ1Fea04wyM8GOW3GK3AAbkHo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "originCoverUrl": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/ogcDueTcEzUDQZFgqMQA9gof8EuRBtEyKQB9QH~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=2t8Rg4Ni7eT%2FMLLGo9H8FFqeUko%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "dynamicCoverUrl": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/ooqxchK8tBoIoAFRuBjIQZTDIyEegjfrREgDEX~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=fJZY71I98mrJ8Se700oAAqdvRlQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "playAddr": "https://v58.tiktokcdn.com/video/tos/alisg/tos-alisg-pve-0037c001/ogHEegjZI8uEcHyBoKjDfBXREtAFQ6ogBq5qEQ/?a=1233&bti=ODszNWYuMDE6&&bt=645&ft=-_sz_mmJPD12NM54Bn-UxdMFbY6e3wv25ucAp&mime_type=video_mp4&rc=aTRoMzxoODc1M2VmNDk1ZkBpajt0NXE5cmU7ZTMzODczNEBgNjYxLTJgXmIxNTIyYmAuYSNfNDBjMmRjLzJhLS1kMWBzcw%3D%3D&vvpl=1&l=20261021160645ABF5B2828CAD3A65DFE4&VExpiration=1792742829&VSignature=PMdruZGuXjt1HBUrLvAeBA&btag=e000b8000&sp_exp=hash_v0",
+            "playCount": 385,
+            "privateItem": false,
+            "authorUniqueId": "tacc.motowoh.medi"
+          },
+          {
+            "id": "7692741317536861461",
+            "desc": "Worship Moments with Elder Enow                                            Text : Psalms 96:6 #worship #taccameroon #taccmotowoh #viral #fyp @Med life With Albright 🩺❤️ ",
+            "height": 1024,
+            "width": 576,
+            "ratio": "540p",
+            "coverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/osDrIUEDPafBw4FDGqhCEfsI4OFL9RAwaIB40g~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=lCWUZsd6YSx6WeA3CWzv%2Fnu3AsA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "originCoverUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o0IRrUqAhdhaHIsCDBIwfwFzBHBBagf4EGEY94~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=Y9oCJUZ%2FAkEzFVzkex0sz6nTwqk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "dynamicCoverUrl": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/oszrIUED3afBw4EBGqhCEfsI4gF99RAwaIBPQg~tplv-tiktokx-origin.image?dr=14575&x-expires=1792742400&x-signature=qUM3jaEHVkgveuF4IqfeM3tToMo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+            "playAddr": "https://v58.tiktokcdn.com/video/tos/alisg/tos-alisg-pve-0037c001/osqRUdCaIBfIhAFR4BwE94mQCwEag0fDrrGDEs/?a=1233&bti=ODszNWYuMDE6&&bt=1081&ft=-_sz_mmJPD12NM54Bn-UxdMFbY6e3wv25ucAp&mime_type=video_mp4&rc=ODk4Zzw2N2g3Nmg2Ozc4ZUBpM3lvcXY5cmw0ZTMzODczNEBhMGMyYi00XjUxXjBjX15iYSNqZGkzMmQ0aS5hLS1kMTFzcw%3D%3D&vvpl=1&l=20261021160645ABF5B2828CAD3A65DFE4&VExpiration=1792742822&VSignature=kkk0TvQdDR8hH8Oq9jZorA&btag=e000b8000&sp_exp=hash_v0",
+            "playCount": 479,
+            "privateItem": false,
+            "authorUniqueId": "tacc.motowoh.medi"
+          }
+        ],
+        "isError": false,
+        "pageName": "creator",
+        "playlistType": "creator",
+        "playlistId": "tacc.motowoh.medi"
+      },
+      "strategy": {
+        "page_context": {
+          "biz_name": "Embed",
+          "idc": "ALISG",
+          "page_name": "Common",
+          "region": "CM"
+        },
+        "wrappers": [
+          {
+            "jump_link_type": "default",
+            "launch_type": "tiktok_app",
+            "name": "wrapper_video",
+            "wrapper_url": {
+              "extra": "",
+              "url_fallback": "https://snssdk1233.onelink.me/bIdt?domain_source=tiktok&af_dp={{schema}}",
+              "url_schemes": [
+                "snssdk1233://aweme/detail/{{video_id}}?gd_label={{gd_label}}&params_url=https%3A%2F%2Fwww.tiktok.com%2Fembed%2F%40tacc.motowoh.medi&refer={{refer}}&referrer_url={{referrer_url}}"
+              ]
+            }
+          },
+          {
+            "jump_link_type": "default",
+            "launch_type": "tiktok_app",
+            "name": "wrapper_user",
+            "wrapper_url": {
+              "extra": "",
+              "url_fallback": "https://snssdk1233.onelink.me/bIdt?domain_source=tiktok&af_dp={{schema}}",
+              "url_schemes": [
+                "snssdk1233://user/profile/{{id}}?gd_label={{gd_label}}&params_url=https%3A%2F%2Fwww.tiktok.com%2Fembed%2F%40tacc.motowoh.medi&refer={{refer}}&referrer_url={{referrer_url}}"
+              ]
+            }
+          },
+          {
+            "jump_link_type": "default",
+            "launch_type": "tiktok_app",
+            "name": "wrapper_foryou",
+            "wrapper_url": {
+              "extra": "",
+              "url_fallback": "https://snssdk1233.onelink.me/bIdt?domain_source=tiktok&af_dp={{schema}}",
+              "url_schemes": [
+                "snssdk1233://feed?gd_label={{gd_label}}&params_url=https%3A%2F%2Fwww.tiktok.com%2Fembed%2F%40tacc.motowoh.medi&refer={{refer}}&referrer_url={{referrer_url}}"
+              ]
+            }
+          },
+          {
+            "jump_link_type": "default",
+            "launch_type": "tiktok_app",
+            "name": "wrapper_hashtag",
+            "wrapper_url": {
+              "extra": "",
+              "url_fallback": "https://snssdk1233.onelink.me/bIdt?domain_source=tiktok&af_dp={{schema}}",
+              "url_schemes": [
+                "snssdk1233://challenge/detail/{{id}}?gd_label={{gd_label}}&params_url=https%3A%2F%2Fwww.tiktok.com%2Fembed%2F%40tacc.motowoh.medi&refer={{refer}}&referrer_url={{referrer_url}}"
+              ]
+            }
+          },
+          {
+            "jump_link_type": "default",
+            "launch_type": "tiktok_app",
+            "name": "wrapper_music",
+            "wrapper_url": {
+              "extra": "",
+              "url_fallback": "https://snssdk1233.onelink.me/bIdt?domain_source=tiktok&af_dp={{schema}}",
+              "url_schemes": [
+                "snssdk1233://music/detail/{{music_id}}?gd_label={{gd_label}}&params_url=https%3A%2F%2Fwww.tiktok.com%2Fembed%2F%40tacc.motowoh.medi&refer={{refer}}&referrer_url={{referrer_url}}"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "subdirectory": "/embed",
+    "params": {},
+    "category": {},
+    "tag": {},
+    "post": {},
+    "page": {},
+    "author": {},
+    "attachment": {},
+    "type": {},
+    "taxonomy": {},
+    "useCaseSensitiveUrls": false,
+    "isReady": true,
+    "referrer": "",
+    "redirections": ""
+  },
+  "abtest": {
+    "serverExperiments": {
+      "isReady": false,
+      "params": {},
+      "proxyApiUrlPrefix": "",
+      "values": {}
+    },
+    "webExperiments": {
+      "isReady": false,
+      "values": {}
+    },
+    "useServerExperiments": false,
+    "useWebExperiments": true
+  },
+  "feature": {
+    "toggle": {
+      "showPlaylistEmbed": false
+    },
+    "useTCC": false,
+    "isReady": true
+  },
+  "frontity": {
+    "name": "tiktok-embed",
+    "match": [
+      "^https?:\\/\\/(t|m|www|us|in|web-(ie|va|sg|i18n|ttp2\\.us))\\.tiktokw?\\.(com|in|eu)\\/embed",
+      "^https?:\\/\\/tiktok-web-wp-sites\\.bytedance\\.net\\/embed",
+      "^https?:\\/\\/tiktok-web-wp-sites-boe\\.bytedance\\.net\\/embed",
+      "^https?:\\/\\/localhost:3000\\/embed",
+      "fn\\.bytedance\\.net\\/embed",
+      ".*([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})\\.([0-9]{1,3})(:[0-9]{4})?\\/embed"
+    ],
+    "mode": "default",
+    "debug": false,
+    "platform": "server",
+    "rendering": "ssr",
+    "hmr": false,
+    "initialLink": "/embed/@tacc.motowoh.medi",
+    "options": {
+      "publicPath": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/embed/static"
+    },
+    "packages": [
+      "@frontity/byted-service",
+      "@frontity/tiny-router",
+      "@frontity/tiktok-embed-theme",
+      "@frontity/tiktok-user",
+      "@frontity/tiktok-source",
+      "@frontity/libra-service",
+      "@frontity/feature-toggle"
+    ],
+    "title": "TikTok Embed",
+    "url": ""
+  }
+}

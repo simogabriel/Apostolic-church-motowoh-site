@@ -1,0 +1,2 @@
+const fs=require('fs');const source=require('./creator-source.json');const videos=Object.values(source.source.data)[0].videoList;
+(async()=>{for(const v of videos){const r=await fetch(v.originCoverUrl||v.coverUrl);if(!r.ok)throw Error('Thumbnail download failed '+r.status);fs.writeFileSync('motowoh-church/dist/assets/tiktok-'+v.id+'.jpg',Buffer.from(await r.arrayBuffer()));console.log('Saved cover '+v.id)}})().catch(e=>{console.error(e.message);process.exit(1)});

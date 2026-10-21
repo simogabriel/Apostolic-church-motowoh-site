@@ -1,0 +1,16 @@
+const fs=require('fs');const root='motowoh-church/dist/';
+let html=fs.readFileSync(root+'index.html','utf8');
+html=html.replace('<script src="app.js" defer></script>','<script src="translations.js" defer></script><script src="app.js" defer></script>');
+html=html.replace('</nav>','<div class="language-switch" data-language-switch role="group" aria-label="Language / Langue"><button type="button" data-language="en" lang="en" aria-pressed="true" aria-label="English">EN</button><span aria-hidden="true">/</span><button type="button" data-language="fr" lang="fr" aria-pressed="false" aria-label="Français">FR</button></div></nav>');
+fs.writeFileSync(root+'index.html',html);
+let app=fs.readFileSync(root+'app.js','utf8');
+app=app.replace("if(page==='home')setupCarousel()}","if(page==='home')setupCarousel();applyLanguage()}");
+app=app.replace("b.setAttribute('aria-pressed',String(n===index))})}","b.setAttribute('aria-pressed',String(n===index))});applyLanguage()}");
+app=app.replace("paused?'Play slideshow':'Pause slideshow')}","paused?'Play slideshow':'Pause slideshow');applyLanguage()}");
+app=app.replace("open?'Close navigation':'Open navigation')}","open?'Close navigation':'Open navigation');applyLanguage()}");
+fs.writeFileSync(root+'app.js',app);
+let css=fs.readFileSync(root+'styles.css','utf8');
+css+='\n.language-switch{display:flex;align-items:center;gap:4px;white-space:nowrap;margin-left:4px}.language-switch button{border:0;background:transparent;color:var(--muted);font-size:11px;font-weight:600;padding:8px 6px;min-height:36px}.language-switch button[aria-pressed="true"]{background:var(--green);color:white;border-radius:3px}.language-switch span{color:#95998e;font-size:10px}header{gap:22px}nav{gap:20px}html[lang="fr"] .brand{font-size:11px}html[lang="fr"] nav{gap:15px}html[lang="fr"] .header-button{font-size:11px;padding:14px} @media(max-width:1200px){.header-button{display:none}}@media(max-width:700px){.language-switch{margin:8px 0 0;padding-top:12px;border-top:1px solid #c6c1b6;align-self:flex-start}.language-switch button{padding:9px 14px;font-size:12px}html[lang="fr"] .brand{font-size:10px}}\n';
+fs.writeFileSync(root+'styles.css',css);
+let trans=fs.readFileSync(root+'translations.js','utf8');trans=trans.replace("if(feed)feed.src='tiktok-feed.html?lang='+language;","if(feed&&feed.getAttribute('src')!=='tiktok-feed.html?lang='+language)feed.src='tiktok-feed.html?lang='+language;");fs.writeFileSync(root+'translations.js',trans);
+let feed=fs.readFileSync(root+'tiktok-feed.html','utf8');feed=feed.replace('<script async src=',`<script>if(new URLSearchParams(location.search).get('lang')==='fr'){document.documentElement.lang='fr';document.title='Tacc Motowoh Media sur TikTok';document.querySelector('a').textContent='Voir Tacc Motowoh Media sur TikTok'}</script><script async src=`);fs.writeFileSync(root+'tiktok-feed.html',feed);

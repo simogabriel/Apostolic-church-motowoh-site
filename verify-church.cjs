@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync('motowoh-church/dist/app.js','utf8');
+const main={innerHTML:''};const stub={classList:{remove(){}},setAttribute(){},textContent:''};
+const ctx={document:{querySelector:s=>s==='main'?main:stub,querySelectorAll:()=>[],title:''},location:{hash:'#about'},window:{scrollTo(){},addEventListener(){}},clearInterval(){},Date};
+vm.createContext(ctx);vm.runInContext(src,ctx);
+assert(main.innerHTML.includes('Our Apostolic heritage'));
+assert(main.innerHTML.includes('1949'));
+assert(main.innerHTML.includes('Tenets1.pdf'));
+const home=vm.runInContext('pages.home()',ctx);
+assert(home.includes('7697941525740768529'));
+assert(home.includes('tiktok-feed.html'));
+assert(!home.includes('Our Apostolic heritage'));
+assert(fs.existsSync('motowoh-church/dist/tiktok-feed.html'));
+console.log('Verified About rendering, official source links, featured video and profile panel.');
