@@ -12,11 +12,8 @@ main .media-section h2,main .media-section h3{color:#fff}
 main .media-section .button{background:#fff;color:#193858}
 main .services .service,main .values article,main .heritage .history-timeline li,main .contact-grid>div{background:#fafbfd;box-shadow:0 6px 24px #17334e08}
 .site-header #main-navigation{position:relative;margin-left:38px}
-.bible-motion{position:absolute;left:-40px;top:50%;translate:0 -50%;width:32px;height:40px;padding:0;background:transparent;border:0;border-radius:5px;cursor:pointer;perspective:140px}
+.bible-motion{position:absolute;left:-40px;top:50%;translate:0 -50%;width:32px;height:40px;display:flex;align-items:center;pointer-events:none;perspective:140px}
 .bible-motion img{width:32px;height:32px;display:block;filter:drop-shadow(0 2px 3px #10273f40)}
-.bible-motion:hover{background:#ffffff18}
-.bible-motion:focus-visible{outline:2px solid #dfc594;outline-offset:3px}
-.bible-motion[aria-pressed="true"]{box-shadow:inset 0 -2px #dfc594}
 @media(prefers-reduced-motion:no-preference){
  .bible-motion img{animation:bible-turn 14s linear infinite}
  @keyframes bible-turn{0%{transform:rotateY(0) rotateZ(-5deg)}50%{transform:rotateY(180deg) rotateZ(5deg)}100%{transform:rotateY(360deg) rotateZ(-5deg)}}
@@ -25,12 +22,19 @@ main .services .service,main .values article,main .heritage .history-timeline li
  .site-header~main .hero>div:first-child>p{animation-delay:.16s}
  .site-header~main .hero>div:first-child>.actions{animation-delay:.24s}
 }
-html[data-motion="paused"] *,html[data-motion="paused"] *::before,html[data-motion="paused"] *::after{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
-html[data-motion="paused"] main .reveal-ready{opacity:1!important;transform:none!important}
-html[data-motion="paused"] .hero>div:first-child>*{animation:none!important;opacity:1!important;transform:none!important}
 @media(max-width:1024px){
  .site-header #main-navigation,.site-header #main-navigation.open{margin-left:0;padding-left:36px}
  .bible-motion{left:0;width:28px}
  .bible-motion img{width:28px;height:28px}
 }
 @media(prefers-reduced-motion:reduce){.bible-motion img{animation:none!important}}
+@media(max-width:600px){
+ main :is(h1,h2,h3,h4,h5,h6),footer :is(h1,h2,h3,h4,h5,h6){text-align:center;margin-inline:auto}
+ main .eyebrow{justify-content:center;text-align:center}
+ main .hero>div:first-child{width:100%;text-align:center}
+ main .hero p{margin-inline:auto}
+ main .hero .actions{justify-content:center}
+ main .church-intro-copy{padding-left:0;border-left:0}
+ main .gallery-intro,main .section-head>div{width:100%;max-width:none}
+ footer .footer-brand{display:block;text-align:center}
+}
