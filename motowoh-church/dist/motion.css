@@ -1,0 +1,32 @@
+/* Quiet motion, consistent surfaces, and clear interaction feedback. */
+.site-header{box-shadow:0 4px 22px #102e5118}
+main .photo-block img,main .gallery-frame{border-radius:10px}
+main .services .service,main .values article,main .heritage .history-timeline li,main .contact-grid>div{border-radius:10px}
+.button{border-radius:5px}
+.site-header nav a,.language-switch button,.button,.icon-button,.page-scroll-controls button{transition:background-color .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease}
+.text-link{transition:color .2s ease,border-color .2s ease}
+main .services .service,main .values article,main .photo-block img{transition:box-shadow .25s ease,border-color .25s ease}
+@media(prefers-reduced-motion:no-preference){
+ html{scroll-behavior:smooth}
+ main .reveal-ready{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+ main .reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+ .hero>div:first-child>*{animation:welcome-enter .75s cubic-bezier(.2,.7,.2,1) both}
+ .hero>div:first-child>h1{animation-delay:.08s}
+ .hero>div:first-child>p{animation-delay:.16s}
+ .hero>div:first-child>.actions{animation-delay:.24s}
+ .button span{display:inline-block;transition:translate .2s ease}
+ .button:hover span{translate:3px -1px}
+ @keyframes welcome-enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+ @keyframes photograph-enter{from{opacity:.5}to{opacity:1}}
+ #slide-image.photo-enter{animation:photograph-enter .45s ease}
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ main .services .service:hover,main .values article:hover{translate:0 -4px;box-shadow:0 12px 28px #153b7514;border-color:#94b2da}
+ main .services .service,main .values article,.button,.icon-button{transition:translate .25s ease,box-shadow .25s ease,background-color .2s ease,border-color .2s ease,color .2s ease}
+ .button:hover,.icon-button:hover{translate:0 -2px;box-shadow:0 6px 16px #16355d18}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ main .reveal-ready{opacity:1!important;transform:none!important;translate:none!important}
+}
