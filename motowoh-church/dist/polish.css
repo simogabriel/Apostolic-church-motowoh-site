@@ -1,0 +1,36 @@
+/* Restrained ink blue, mist blue, ivory, and muted brass. */
+:root{--apostolic-blue:#254c78;--apostolic-blue-dark:#193858;--blue-surface:#f5f7fa;--blue-panel:#e8eef5;--ink:#20334b;--green:#254c78;--muted:#526279;--line:#ccd7e4}
+.site-header,footer{background:#254c78}
+.site-header #main-navigation,.site-header #main-navigation.open{background:#254c78}
+main .hero{background-image:linear-gradient(100deg,#10273fec,#183d61d9 55%,#183d6180),url('assets/main photo.jpg')}
+.hero h1 em,.hero .eyebrow{color:#dfc594}
+.hero .button.gold{background:#dfc594;border-color:#dfc594;color:#19324e}
+main .page-hero,main .quote,main .vision-quote,main .media-section{background:linear-gradient(120deg,#193858,#31577e)}
+main .photo-tag,main .button{background:#254c78}
+main .section h2,main .section h3{color:#193858}
+main .media-section h2,main .media-section h3{color:#fff}
+main .media-section .button{background:#fff;color:#193858}
+main .services .service,main .values article,main .heritage .history-timeline li,main .contact-grid>div{background:#fafbfd;box-shadow:0 6px 24px #17334e08}
+.site-header #main-navigation{position:relative;margin-left:38px}
+.bible-motion{position:absolute;left:-40px;top:50%;translate:0 -50%;width:32px;height:40px;padding:0;background:transparent;border:0;border-radius:5px;cursor:pointer;perspective:140px}
+.bible-motion img{width:32px;height:32px;display:block;filter:drop-shadow(0 2px 3px #10273f40)}
+.bible-motion:hover{background:#ffffff18}
+.bible-motion:focus-visible{outline:2px solid #dfc594;outline-offset:3px}
+.bible-motion[aria-pressed="true"]{box-shadow:inset 0 -2px #dfc594}
+@media(prefers-reduced-motion:no-preference){
+ .bible-motion img{animation:bible-turn 14s linear infinite}
+ @keyframes bible-turn{0%{transform:rotateY(0) rotateZ(-5deg)}50%{transform:rotateY(180deg) rotateZ(5deg)}100%{transform:rotateY(360deg) rotateZ(-5deg)}}
+ .site-header~main .hero>div:first-child>*{animation:welcome-enter .8s cubic-bezier(.2,.7,.2,1) both}
+ .site-header~main .hero>div:first-child>h1{animation-delay:.08s}
+ .site-header~main .hero>div:first-child>p{animation-delay:.16s}
+ .site-header~main .hero>div:first-child>.actions{animation-delay:.24s}
+}
+html[data-motion="paused"] *,html[data-motion="paused"] *::before,html[data-motion="paused"] *::after{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}
+html[data-motion="paused"] main .reveal-ready{opacity:1!important;transform:none!important}
+html[data-motion="paused"] .hero>div:first-child>*{animation:none!important;opacity:1!important;transform:none!important}
+@media(max-width:1024px){
+ .site-header #main-navigation,.site-header #main-navigation.open{margin-left:0;padding-left:36px}
+ .bible-motion{left:0;width:28px}
+ .bible-motion img{width:28px;height:28px}
+}
+@media(prefers-reduced-motion:reduce){.bible-motion img{animation:none!important}}

@@ -249,7 +249,7 @@ function applyLanguage(){
  });
  document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
  const page=location.hash.slice(1)||'home';const titles={home:'Welcome',about:'About us',outreach:'Outreach',vision:'Our vision',contact:'Contact & directions'};
- const title=titles[page]||titles.home;
+ const title=Object.hasOwn(titles,page)?titles[page]:titles.home;
  document.title=(language==='fr'?translateString(title):title)+' | '+(language==='fr'?'L’Église Apostolique · District de Motowoh':'The Apostolic Church · Motowoh District');
  const description=document.querySelector('meta[name="description"]');
  description.content=language==='fr'?'Bienvenue à l’Église Apostolique, district de Motowoh. Adorez, grandissez dans la Parole de Dieu et priez avec nous à Motowoh Newtown, Limbé.':"Welcome to The Apostolic Church, Motowoh District. Worship, grow in God's Word and pray with us in Motowoh Newtown, Limbe.";
