@@ -1,0 +1,71 @@
+/* Blue drawn from the church emblem, deepened for readable white text. */
+:root{--apostolic-blue:#356ab4;--apostolic-blue-dark:#28548f;--apostolic-border:#ffffff40}
+:root{--green:#28548f;--ink:#172e4d;--muted:#53647b;--line:#cedaeb;--blue-surface:#f2f6fc;--blue-panel:#e5edf8}
+.topbar{background:var(--apostolic-blue-dark);color:#fff;border-color:var(--apostolic-border)}
+.site-header{background:var(--apostolic-blue);color:#fff;border-bottom-color:var(--apostolic-border)}
+.site-header .brand,.site-header .brand small{color:#fff}
+.site-header .brand img{background:#fff;border-radius:50%;padding:3px}
+.site-header nav,.site-header nav.open,.site-header #main-navigation,.site-header #main-navigation.open{background:var(--apostolic-blue);border-color:var(--apostolic-border)}
+.site-header #main-navigation a{color:#fff;background:transparent;border-color:var(--apostolic-border)}
+.site-header #main-navigation a.active,.site-header #main-navigation a:hover{background:#fff;color:var(--apostolic-blue-dark);border-color:#fff}
+.site-header .language-switch{background:transparent;border-color:var(--apostolic-border)}
+.site-header .language-switch button[aria-pressed="false"]{background:transparent;color:#fff}
+.site-header .language-switch button[aria-pressed="true"]{background:#fff;color:var(--apostolic-blue-dark)}
+.site-header a:focus-visible,.site-header button:focus-visible,footer a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+footer{background:var(--apostolic-blue);color:#fff;border-top:1px solid var(--apostolic-border)}
+footer p,footer a,footer h3,footer .footer-brand,footer .footer-brand span,footer .footer-bottom{color:#fff}
+footer .footer-links,footer .footer-bottom{border-color:var(--apostolic-border)}
+footer a:hover{text-decoration:underline;text-underline-offset:5px}
+.hero{background-image:linear-gradient(90deg,rgba(12,35,68,.95),rgba(18,49,88,.8) 55%,rgba(18,49,88,.48)),url('assets/main photo.jpg');color:#fff}
+.hero h1{color:#fff}.hero h1 em{color:#e8c78a}
+.hero .eyebrow{color:#e8c78a}.hero p{color:#e9eff7}
+.hero .button.gold{background:#e8c78a;color:#172e4d;border-color:#e8c78a}
+.hero .button.gold:hover{background:#f2d9aa}
+.hero .button.outline{background:#ffffff0d;color:#fff;border-color:#ffffff80}
+.hero .button.outline:hover{background:#ffffff24;border-color:#fff}
+.hero .hero-bottom{color:#eef3fa;border-color:#ffffff45}
+.hero a:focus-visible{outline:3px solid #e8c78a;outline-offset:5px}
+.gallery{background:#f3f6fb;color:#172e4d}
+.gallery .gallery-intro h2,.gallery .eyebrow,.gallery #slide-count{color:#28548f}
+.gallery .gallery-intro p{color:#53647b}
+.gallery .gallery-frame{background:#e5ecf6;border-color:#cedaeb}
+.gallery .carousel img{aspect-ratio:4/3;max-height:420px;object-fit:contain}
+.gallery .icon-button{color:#28548f;border-color:#bdcce0;background:#fff;width:44px;height:44px}
+.gallery .icon-button:hover{background:#e4edfa;border-color:#356ab4}
+.gallery .dot.selected:after{background:#356ab4}
+.gallery .facebook-link{color:#28548f;border-color:#9db4d2;margin-top:16px;line-height:1.6}
+@media(max-width:600px){.hero{background-position:60% center}.gallery .carousel img{max-height:340px}.hero .actions .button{flex:1 1 100%}}
+.site-header nav,.site-header #main-navigation,html[lang="fr"] .site-header nav{gap:4px}
+.site-header #main-navigation a{font-size:11px;padding:9px 11px;min-height:38px;line-height:18px}
+.site-header .language-switch{gap:2px;padding:3px}
+.site-header .language-switch button{font-size:9px;min-width:30px;min-height:30px;padding:5px 6px;line-height:18px}
+@media(max-width:600px){
+ .site-header #main-navigation a{font-size:10px;padding:7px 6px;min-height:36px;line-height:16px}
+ .site-header .language-switch button{font-size:8px;min-width:27px;min-height:28px;padding:4px 5px}
+}
+/* A consistent blue palette across every page below the navigation. */
+main{background:var(--blue-surface);color:var(--ink)}
+main .section,main .cta,main .vision-growth{background:var(--blue-surface);color:var(--ink);border-color:var(--line)}
+main .services.weekly-services,main .heritage,main .contact-grid,main .vision-page-hero~.services{background:var(--blue-panel);border-color:var(--line);color:var(--ink)}
+main .page-hero,main .quote,main .vision-quote,main .media-section{background:linear-gradient(125deg,#28548f,#356ab4);color:#fff;border-color:#ffffff30}
+main .page-hero h1,main .page-hero p,main .page-hero .eyebrow,main .quote blockquote,main .quote>span,main .quote .eyebrow,main .media-section h2,main .media-section h3,main .media-section p,main .media-section .eyebrow,main .media-section .text-link{color:#fff}
+main .section h2,main .section h3,main .weekly-services .section-head h2,main .vision-page-hero~.services>h2,main .church-intro h2 em{color:var(--apostolic-blue-dark)}
+main .section .eyebrow,main .weekly-services .section-head .eyebrow,main .vision-page-hero~.services>.eyebrow,main .heritage .history-timeline span{color:var(--apostolic-blue-dark)}
+main .section .eyebrow:before{background:currentColor}
+main .section .muted,main .section .note,main .heritage .intro-grid p,main .weekly-services .section-head>p,main .values p,main .service p,main .service small,main .heritage .history-timeline p{color:var(--muted)}
+main .services .service,main .services .service+.service,main .services.weekly-services .service,main .services.weekly-services .service+.service,main .heritage .history-timeline li,main .values article,main .contact-grid>div{background:#f8faff;border-color:#c5d5ea;box-shadow:0 6px 20px #183f7008}
+main .services .service,main .services.weekly-services .service,main .heritage .history-timeline li{border-top-color:var(--apostolic-blue)}
+main .weekly-services .service .number,main .services .service strong,main .weekly-services .service strong{background:#e3ecfa;border-color:#bdcfe8;color:#28548f}
+main .values article:before{background:var(--apostolic-blue)}
+main .church-intro-copy,main .weekly-services .section-head>p,main .heritage .history-timeline,main .contact-phones{border-color:#a8bfdf}
+main .section .text-link,main .contact-phones a{color:#28548f;border-color:#9db4d2}
+main .photo-tag{background:#28548f;color:#fff}
+main .button{background:#28548f;color:#fff;border-color:#28548f}
+main .button:hover{background:#1e4376;border-color:#1e4376}
+main .contact-grid .contact-phones a{background:#e5edf9;color:#28548f;border-color:#bdcfe8;border-left-color:#356ab4}
+main .contact-grid .contact-phones a:hover{background:#d6e4f6}
+main .contact-grid .map{background:#e5edf9;border-color:#f8faff;outline-color:#c5d5ea}
+main .media-section .muted,main .media-section .note,main .media-section .eyebrow{color:#edf3fc}
+main .media-section h2,main .media-section h3,main .media-section .text-link{color:#fff}
+main .media-section .button{background:#fff;color:#28548f;border-color:#fff}
+main .media-section .button:hover{background:#e5edf9}

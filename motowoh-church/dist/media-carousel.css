@@ -1,0 +1,16 @@
+*{box-sizing:border-box}body{margin:0;background:#ffffff;color:#303832;font:13px Arial,sans-serif}.video-carousel{padding:18px;max-width:720px;margin:auto}.media-label{display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:1.5px;font-weight:700;padding-bottom:14px}.media-label span{font-size:10px;letter-spacing:1px;color:#62665f;font-variant-numeric:tabular-nums}.video-stage{height:320px;background:#ffffff;border-radius:4px;overflow:hidden;position:relative}#watch{border:0;padding:0;width:100%;height:100%;cursor:pointer;display:block;background:transparent;position:relative}#cover{width:100%;height:100%;object-fit:contain;display:block}.play-icon{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border:1px solid #ffffff90;border-radius:50%;display:grid;place-items:center;background:#232b26b3;color:#fff;font-size:19px;padding-left:3px}.video-stage iframe{width:100%;height:100%;border:0}.video-title{font:500 17px/1.45 Georgia,serif;margin:14px 0 10px;min-height:48px}.control-row{display:flex;justify-content:space-between;align-items:center;gap:10px}.buttons{display:flex;gap:5px}.buttons button{width:38px;height:40px;border:1px solid #c9c3b7;border-radius:4px;background:transparent;color:#303832;font-size:17px;cursor:pointer}.buttons button:hover{background:#e4ded1}.video-dots{display:flex;gap:0}.video-dots button{position:relative;width:22px;height:40px;border:0;background:none;cursor:pointer;padding:0}.video-dots button:after{content:'';width:6px;height:6px;background:#c5c0b5;border-radius:50%;position:absolute;top:17px;left:8px}.video-dots button[aria-pressed="true"]:after{background:#80653d}button:focus-visible,a:focus-visible{outline:2px solid #80653d;outline-offset:3px}.video-links{display:flex;justify-content:space-between;gap:15px;padding-top:13px;margin-top:10px;border-top:1px solid #d6d0c4}.video-links a{font-size:11px;color:#303832;text-decoration:none;line-height:1.6}#media-note{font-size:10px;color:#62665f;line-height:1.6;margin:12px 0 0}@media(max-width:360px){.video-carousel{padding:12px}.video-stage{height:290px}.video-dots button{width:18px}.video-dots button:after{left:6px}.buttons button{width:34px}.video-title{font-size:16px}}
+/* Restrained stone and bronze palette for the church media panel. */
+body{background:#e8e2d7;color:#303832}
+.video-carousel{background:#e8e2d7}
+.media-label{color:#635236}
+.media-label span{color:#62665d}
+.video-stage{background:#303832;border:1px solid #bdb3a1}
+.video-title{color:#303832}
+.buttons button{background:#f5f1e9;border-color:#c4b8a3;color:#303832}
+.buttons button:hover{background:#ded3bf;border-color:#a48b63}
+.video-dots button:after{background:#b6ae9f}
+.video-dots button[aria-pressed="true"]:after{background:#80633c}
+.video-links{border-color:#c7bcaa}
+.video-links a{color:#5d4a2c}
+.video-links a:hover{text-decoration:underline;text-underline-offset:4px}
+#media-note{color:#5e635b}

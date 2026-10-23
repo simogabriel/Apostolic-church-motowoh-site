@@ -1,0 +1,6 @@
+.page-scroll-controls{position:fixed;right:20px;bottom:max(20px,env(safe-area-inset-bottom));z-index:30;display:flex;flex-direction:column;gap:8px}
+.page-scroll-controls button{display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #c7bfaf;border-radius:50%;background:#fff;color:#303832;box-shadow:0 3px 12px #232b2618;font:22px/1 Arial,sans-serif;cursor:pointer}
+.page-scroll-controls button:hover{background:#ede7dc;border-color:#a78b5e}
+.page-scroll-controls button:focus-visible{outline:3px solid #80633c;outline-offset:3px}
+footer{padding-bottom:85px}
+@media(max-width:600px){.page-scroll-controls{right:12px;gap:7px;bottom:max(16px,env(safe-area-inset-bottom))}}

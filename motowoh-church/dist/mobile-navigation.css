@@ -1,0 +1,42 @@
+/* Keep every page link visible as the browser window narrows. */
+.site-header{flex-wrap:wrap}
+.site-header .menu-toggle{display:none}
+@media(min-width:601px) and (max-width:1100px){
+ .site-header{gap:14px 18px;padding-bottom:14px}
+ .site-header .brand{order:1;margin-right:auto}
+ .site-header .header-actions{order:2;margin-left:auto}
+ .site-header #main-navigation,.site-header #main-navigation.open{order:3;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:static;inset:auto;width:100%;flex-basis:100%;margin:0;padding:12px 0 0;gap:8px!important;border:0;border-top:1px solid #e2e2df;background:#fff;box-shadow:none;max-height:none;overflow:visible}
+ .site-header #main-navigation a{display:flex;justify-content:center;align-items:center;text-align:center;white-space:normal;min-height:46px;padding:10px 8px;font-size:13px;line-height:1.5}
+ .site-header .language-switch{margin:0}
+}
+@media(max-width:600px){
+ .site-header{display:flex;flex-wrap:wrap;align-items:center;gap:12px 8px;padding-bottom:12px}
+ .site-header .brand{order:1;margin-right:auto}
+ .site-header .header-actions{order:2;margin-left:auto}
+ .site-header .menu-toggle{display:none}
+ .site-header #main-navigation,.site-header #main-navigation.open{order:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:static;inset:auto;width:100%;flex-basis:100%;margin:0;padding:10px 0 0;gap:6px!important;border:0;border-top:1px solid #e2e2df;background:#fff;box-shadow:none;max-height:none;overflow:visible}
+ .site-header #main-navigation a{display:flex;align-items:center;justify-content:center;text-align:center;white-space:normal;padding:10px 7px;min-height:44px;font-size:12px;line-height:1.4;border:1px solid #e7e7e3;border-radius:4px;background:#fff;color:#303832}
+ .site-header #main-navigation a.active{background:#303832;border-color:#303832;color:#fff}
+ .site-header #main-navigation a.active:after{display:none}
+ .site-header .language-switch{margin:0}
+}
+@media(max-width:360px){.site-header #main-navigation{grid-template-columns:repeat(2,minmax(0,1fr))}.site-header #main-navigation a{font-size:11px}}
+
+/* Introduce the welcome message in a gentle, readable sequence. */
+@media(prefers-reduced-motion:no-preference){
+ @keyframes welcome-text-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+ .hero>div:first-child>.eyebrow,.hero>div:first-child>h1,.hero>div:first-child>p,.hero>div:first-child>.actions{animation:welcome-text-in .65s cubic-bezier(.2,.7,.2,1) both}
+ .hero>div:first-child>.eyebrow{animation-delay:.05s}
+ .hero>div:first-child>h1{animation-delay:.16s}
+ .hero>div:first-child>p{animation-delay:.28s}
+ .hero>div:first-child>.actions{animation-delay:.4s}
+}
+@media(prefers-reduced-motion:reduce){.hero>div:first-child>*{animation:none;opacity:1;transform:none}}
+
+.topbar{justify-content:flex-end}.topbar span:last-child{display:inline}
+footer .footer-tagline{font-family:Georgia,serif;font-size:16px;line-height:1.6;color:inherit;margin:20px 0 10px}
+.footer-links{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 32px;border-top:1px solid #8d928b40;padding-top:18px}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;padding:6px 0;color:inherit}
+.footer-links a:hover{text-decoration:underline;text-underline-offset:5px}
+.footer-links+.footer-bottom{margin-top:0}
+@media(max-width:600px){.topbar{justify-content:center}.footer-links{gap:4px 24px}.footer-links a{font-size:12px}.footer-links+.footer-bottom{margin-top:0}}
